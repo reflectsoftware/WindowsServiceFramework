@@ -156,10 +156,12 @@
     <Compile Include="..\GlobalAssemblyInfo.cs">
       <Link>Properties\GlobalAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="ExceptionPublishers\ExceptionFormatterExtender.cs" />
+    <Compile Include="ExceptionPublishers\ReflectInsightPublisher.cs" />
     <Compile Include="Extensions\DependencyFactoryExtensions.cs" />
     <Compile Include="Interfaces\IDependencyFactory.cs" />
     <Compile Include="IoCModules\DependencyFactory.cs" />
-    <Compile Include="IoCModules\SharedModule.cs" />
+    <Compile Include="IoCModules\BaseModule.cs" />
     <Compile Include="IoCModules\WorkManagerDependencyResolver.cs" />
     <Compile Include="Models\ResolveParameter.cs" />
     <Compile Include="Notifications\ServiceLogNotification.cs" />

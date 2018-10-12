@@ -15,7 +15,7 @@ using WindowsServiceFramework.Interfaces;
 
 namespace WindowsServiceFramework.IoCModules
 {
-    public class SharedModule : Module
+    public class BaseModule : Module
     {
         protected readonly ILogNotification _notifier;
         protected readonly IDisposables _disposables;
@@ -24,13 +24,13 @@ namespace WindowsServiceFramework.IoCModules
         protected readonly Func<IDependencyFactory> _onDependencyFactory;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SharedModule" /> class.
+        /// Initializes a new instance of the <see cref="BaseModule" /> class.
         /// </summary>
         /// <param name="workManagerRegistry">The work manager registry.</param>
         /// <param name="notifier">The notifier.</param>
         /// <param name="disposables">The disposables.</param>
         /// <param name="onDependencyFactory">The on dependency factory.</param>
-        public SharedModule(
+        public BaseModule(
             WorkManagerRegistry workManagerRegistry,
             ILogNotification notifier,
             IDisposables disposables,
@@ -59,7 +59,7 @@ namespace WindowsServiceFramework.IoCModules
             builder.Register(c => _disposables).As<IDisposables>().SingleInstance();
             
             // configurations 
-            builder.Register(c => new SimpleConfigurationSectionManager("generalSettings")).Named<ISimpleConfigurationSectionManager>("generalSettings").SingleInstance();
+            //builder.Register(c => new SimpleConfigurationSectionManager("generalSettings")).Named<ISimpleConfigurationSectionManager>("generalSettings").SingleInstance();
 
             //RegisterDatabaseContainers(builder);
         }

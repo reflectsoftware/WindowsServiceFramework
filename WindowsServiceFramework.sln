@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Solution Items", "0. Sol
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Projects", "2. Projects", "{D8113391-CB4C-4C0D-A176-901E6790C1EF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Projects", "3. Projects", "{D8113391-CB4C-4C0D-A176-901E6790C1EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceFramework", "src\WindowsServiceFramework\WindowsServiceFramework.csproj", "{AFC93C75-B73F-4B2E-926E-D8DF22132223}"
 EndProject
@@ -19,6 +19,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Visual Studio Templates"
 	ProjectSection(SolutionItems) = preProject
 		src\Visual Studio Templates\README.md = src\Visual Studio Templates\README.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Samples", "2. Samples", "{965C89EB-9E9D-419B-AB0C-89B306BFA46C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basic Sample", "Basic Sample", "{E72A21F9-76FC-4C31-AD88-115AEC09EB72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions Sample", "Extensions Sample", "{FF775B1D-335F-46F3-BADA-A5F995C0600F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceFramework.BasicSample", "Samples\Basic\WindowsServiceFramework.BasicSample\WindowsServiceFramework.BasicSample.csproj", "{7B36CDF8-7290-4E5A-91A5-2A219E171D26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceFramework.BasicSample.Workers", "Samples\Basic\WindowsServiceFramework.BasicSample.Workers\WindowsServiceFramework.BasicSample.Workers.csproj", "{3F34E28B-1C8F-4A4C-BE65-430A25611D32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +44,14 @@ Global
 		{6DA191F9-DF38-4F1A-936A-0DADCCF4E7A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DA191F9-DF38-4F1A-936A-0DADCCF4E7A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DA191F9-DF38-4F1A-936A-0DADCCF4E7A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B36CDF8-7290-4E5A-91A5-2A219E171D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B36CDF8-7290-4E5A-91A5-2A219E171D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B36CDF8-7290-4E5A-91A5-2A219E171D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B36CDF8-7290-4E5A-91A5-2A219E171D26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F34E28B-1C8F-4A4C-BE65-430A25611D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F34E28B-1C8F-4A4C-BE65-430A25611D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F34E28B-1C8F-4A4C-BE65-430A25611D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F34E28B-1C8F-4A4C-BE65-430A25611D32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +59,10 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{AFC93C75-B73F-4B2E-926E-D8DF22132223} = {D8113391-CB4C-4C0D-A176-901E6790C1EF}
 		{6DA191F9-DF38-4F1A-936A-0DADCCF4E7A2} = {D8113391-CB4C-4C0D-A176-901E6790C1EF}
+		{E72A21F9-76FC-4C31-AD88-115AEC09EB72} = {965C89EB-9E9D-419B-AB0C-89B306BFA46C}
+		{FF775B1D-335F-46F3-BADA-A5F995C0600F} = {965C89EB-9E9D-419B-AB0C-89B306BFA46C}
+		{7B36CDF8-7290-4E5A-91A5-2A219E171D26} = {E72A21F9-76FC-4C31-AD88-115AEC09EB72}
+		{3F34E28B-1C8F-4A4C-BE65-430A25611D32} = {E72A21F9-76FC-4C31-AD88-115AEC09EB72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB053F67-B1A9-44E9-B5CF-671A4670AA8E}
