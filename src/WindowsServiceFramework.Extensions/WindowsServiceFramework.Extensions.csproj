@@ -156,7 +156,7 @@
   <ItemGroup>
     <Compile Include="Interfaces\IDelayServiceRepository.cs" />
     <Compile Include="Interfaces\IPassiveServiceRepository.cs" />
-    <Compile Include="Interfaces\IReferenceRepositoryContainer.cs" />
+    <Compile Include="Interfaces\IWorkerRepositoryContainer.cs" />
     <Compile Include="Models\DelayServiceModel.cs" />
     <Compile Include="Models\PassiveServiceModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -166,6 +166,12 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WindowsServiceFramework\WindowsServiceFramework.csproj">
+      <Project>{AFC93C75-B73F-4B2E-926E-D8DF22132223}</Project>
+      <Name>WindowsServiceFramework</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

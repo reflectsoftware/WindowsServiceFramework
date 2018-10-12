@@ -2,10 +2,10 @@
 
 namespace WindowsServiceFramework.Extensions.Interfaces
 {
-    public interface IReferenceRepositoryContainer : IDisposable
+    public interface IWorkerRepositoryContainer : IDisposable
     {
         /// <summary>
-        /// Gets a value indicating whether this <see cref="IReferenceRepositoryContainer"/> is disposed.
+        /// Gets a value indicating whether this <see cref="IWorkerRepositoryContainer"/> is disposed.
         /// </summary>
         /// <value>
         ///   <c>true</c> if disposed; otherwise, <c>false</c>.

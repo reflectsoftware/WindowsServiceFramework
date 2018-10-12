@@ -10,7 +10,7 @@ namespace WindowsServiceFramework.Extensions.Workers
 {
     public abstract class PassiveWorker : BaseWorker
     {
-        protected readonly IReferenceRepositoryContainer _referenceRepositoryContainer;
+        protected readonly IWorkerRepositoryContainer _workerRepositoryContainer;
         protected readonly Guid _serviceId;
 
         /// <summary>
@@ -20,11 +20,11 @@ namespace WindowsServiceFramework.Extensions.Workers
         /// <param name="referenceRepositoryContainer">The reference repository container.</param>
         public PassiveWorker(
             IWorkPackage workPackage,
-            IReferenceRepositoryContainer referenceRepositoryContainer) : base(workPackage)
+            IWorkerRepositoryContainer workerRepositoryContainer) : base(workPackage)
         {
-            Guard.AgainstNull(() => referenceRepositoryContainer);
+            Guard.AgainstNull(() => workerRepositoryContainer);
 
-            _referenceRepositoryContainer = referenceRepositoryContainer;
+            _workerRepositoryContainer = workerRepositoryContainer;
             _serviceId = Guid.NewGuid();
         }
 
@@ -33,7 +33,7 @@ namespace WindowsServiceFramework.Extensions.Workers
         /// </summary>
         protected override void OnDispose()
         {
-            _referenceRepositoryContainer?.Dispose();
+            _workerRepositoryContainer?.Dispose();
 
             base.OnDispose();
         }
@@ -45,7 +45,7 @@ namespace WindowsServiceFramework.Extensions.Workers
         {
             base.OnInitializeThread();
 
-            var service = _referenceRepositoryContainer
+            var service = _workerRepositoryContainer
                 .PassiveServiceRepository
                 .GetAsync(query =>
                 {
@@ -57,7 +57,7 @@ namespace WindowsServiceFramework.Extensions.Workers
 
             if (service == null)
             {
-                _referenceRepositoryContainer
+                _workerRepositoryContainer
                     .PassiveServiceRepository
                     .InitializeSeedAsync(WorkPackage.NameInstance)
                     .Wait();
@@ -76,7 +76,7 @@ namespace WindowsServiceFramework.Extensions.Workers
             var result = true;
             if (timeWindow != 0)
             {
-                result = _referenceRepositoryContainer
+                result = _workerRepositoryContainer
                     .PassiveServiceRepository
                     .ObtainOwnershipAsync(WorkPackage.NameInstance, _serviceId, timeWindow).Result;
             }
