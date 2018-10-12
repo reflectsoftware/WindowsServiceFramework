@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Solution Items", "0. Solution Items", "{6A1DFDE2-D32B-4E80-B476-53E7DC44194E}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Projects", "1. Projects", "{D8113391-CB4C-4C0D-A176-901E6790C1EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceFramework", "src\WindowsServiceFramework\WindowsServiceFramework.csproj", "{AFC93C75-B73F-4B2E-926E-D8DF22132223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceFramework.Extensions", "src\WindowsServiceFramework.Extensions\WindowsServiceFramework.Extensions.csproj", "{6DA191F9-DF38-4F1A-936A-0DADCCF4E7A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFC93C75-B73F-4B2E-926E-D8DF22132223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFC93C75-B73F-4B2E-926E-D8DF22132223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFC93C75-B73F-4B2E-926E-D8DF22132223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFC93C75-B73F-4B2E-926E-D8DF22132223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DA191F9-DF38-4F1A-936A-0DADCCF4E7A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DA191F9-DF38-4F1A-936A-0DADCCF4E7A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DA191F9-DF38-4F1A-936A-0DADCCF4E7A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DA191F9-DF38-4F1A-936A-0DADCCF4E7A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AFC93C75-B73F-4B2E-926E-D8DF22132223} = {D8113391-CB4C-4C0D-A176-901E6790C1EF}
+		{6DA191F9-DF38-4F1A-936A-0DADCCF4E7A2} = {D8113391-CB4C-4C0D-A176-901E6790C1EF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB053F67-B1A9-44E9-B5CF-671A4670AA8E}
+	EndGlobalSection
+EndGlobal
