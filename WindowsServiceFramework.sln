@@ -8,11 +8,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Solution Items", "0. Sol
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Projects", "1. Projects", "{D8113391-CB4C-4C0D-A176-901E6790C1EF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Projects", "2. Projects", "{D8113391-CB4C-4C0D-A176-901E6790C1EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceFramework", "src\WindowsServiceFramework\WindowsServiceFramework.csproj", "{AFC93C75-B73F-4B2E-926E-D8DF22132223}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceFramework.Extensions", "src\WindowsServiceFramework.Extensions\WindowsServiceFramework.Extensions.csproj", "{6DA191F9-DF38-4F1A-936A-0DADCCF4E7A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Visual Studio Templates", "1. Visual Studio Templates", "{D65A40AA-055F-41EF-9585-D7388A076B21}"
+	ProjectSection(SolutionItems) = preProject
+		src\Visual Studio Templates\README.md = src\Visual Studio Templates\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
