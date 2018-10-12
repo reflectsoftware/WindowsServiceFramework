@@ -153,6 +153,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="Extensions\DependencyFactoryExtensions.cs" />
     <Compile Include="Interfaces\IDependencyFactory.cs" />
     <Compile Include="IoCModules\DependencyFactory.cs" />
