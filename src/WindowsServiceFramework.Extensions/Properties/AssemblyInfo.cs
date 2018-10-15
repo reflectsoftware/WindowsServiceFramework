@@ -2,7 +2,7 @@
 
 [assembly: AssemblyProduct("WindowsServiceFramework.Extensions")]
 [assembly: AssemblyTitle("WindowsServiceFramework.Extensions")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("123")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
