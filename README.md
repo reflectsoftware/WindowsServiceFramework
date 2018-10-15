@@ -2,7 +2,7 @@
 
 A project for easily setting up robust Windows Services projects.
 
-Platforms - .NET Framework 4.6.1 and higher.
+**Platforms** - .NET Framework 4.6.1 and higher.
 
 ## Build Status
 
