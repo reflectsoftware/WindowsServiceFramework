@@ -55,13 +55,6 @@ namespace WindowsServiceFramework.BasicSample.Workers
         /// </summary>
         protected override void OnWork()
         {
-#if !DEBUG
-            if (!HasOwnership(_serviceOwnershipTimeWindow))
-            {
-                return;
-            }
-#endif
-
             OnWorkAsync().GetAwaiter().GetResult();
         }
     }
