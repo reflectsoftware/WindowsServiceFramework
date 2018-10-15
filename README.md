@@ -8,9 +8,9 @@ A project for easily setting up robust Windows Services projects.
 
 Branch  | Build Status
 ------------- | ---------------
-Master | [![Build status](https://dev.azure.com/reflectsoftware/WindowsServiceFramework/_apis/build/status/WindowsServiceFramework-.NET%20Desktop-CI)](https://dev.azure.com/reflectsoftware/WindowsServiceFramework/_apis/build/status/WindowsServiceFramework-.NET%20Desktop-CI?branchName=master)
-Develop | [![Build status](https://dev.azure.com/reflectsoftware/WindowsServiceFramework/_apis/build/status/WindowsServiceFramework-.NET%20Desktop-CI)](https://dev.azure.com/reflectsoftware/WindowsServiceFramework/_apis/build/status/WindowsServiceFramework-.NET%20Desktop-CI?branchName=develop)
+master | [![Build status](https://dev.azure.com/reflectsoftware/WindowsServiceFramework/_apis/build/status/WindowsServiceFramework-.NET%20Desktop-CI)](https://dev.azure.com/reflectsoftware/WindowsServiceFramework/_apis/build/status/WindowsServiceFramework-.NET%20Desktop-CI?branchName=master)
+develop | [![Build status](https://dev.azure.com/reflectsoftware/WindowsServiceFramework/_apis/build/status/WindowsServiceFramework-.NET%20Desktop-CI)](https://dev.azure.com/reflectsoftware/WindowsServiceFramework/_apis/build/status/WindowsServiceFramework-.NET%20Desktop-CI?branchName=develop)
 
 ## Getting Started
 
-TODO
+TODO - test 123

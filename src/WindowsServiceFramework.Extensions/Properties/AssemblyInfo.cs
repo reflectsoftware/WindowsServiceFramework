@@ -2,7 +2,7 @@
 
 [assembly: AssemblyProduct("WindowsServiceFramework.Extensions")]
 [assembly: AssemblyTitle("WindowsServiceFramework.Extensions")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A robust service hosting framework for building Windows services using Microsoft .NET Framework.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
