@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>WindowsServiceFramework</id>
+    <version>$version$</version>
+    <title>WindowsServiceFramework</title>
+    <authors>ReflectSoftware Inc.</authors>
+    <owners>ReflectSoftware Inc.</owners>
+	<licenseUrl>https://github.com/reflectsoftware/WindowsServiceFramework/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/reflectsoftware/WindowsServiceFramework</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A robust service hosting framework for building Windows services using Microsoft .NET Framework.</description>
+	<summary></summary>
+    <copyright>Copyright (C) 2018 ReflectSoftware Inc.</copyright>
+	<tags>plato windows-service work-manager .net</tags>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="bin\Release\**" target="lib\net461" />
+    <file src="**\*.cs" exclude="**\obj\**\*.*" target="src" />
+  </files>
+</package>
