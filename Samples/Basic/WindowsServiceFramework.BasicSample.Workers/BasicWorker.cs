@@ -7,8 +7,6 @@ namespace WindowsServiceFramework.BasicSample.Workers
 {
     public class BasicWorker : BaseWorker
     {
-        private int _serviceOwnershipTimeWindow;
-
         /// <summary>
         /// Initializes a new instance of the <see cref="BasicWorker" /> class.
         /// </summary>
@@ -24,8 +22,6 @@ namespace WindowsServiceFramework.BasicSample.Workers
         protected override void OnInitialize()
         {
             base.OnInitialize();
-
-            _serviceOwnershipTimeWindow = int.Parse(WorkPackage.Parameters("serviceOwnershipTimeWindow", "5"));
         }
 
         /// <summary>
