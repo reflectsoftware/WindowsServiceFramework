@@ -13,4 +13,4 @@ develop | [![Build status](https://dev.azure.com/reflectsoftware/WindowsServiceF
 
 ## Getting Started
 
-TODO - test 123
+Coming soon!
