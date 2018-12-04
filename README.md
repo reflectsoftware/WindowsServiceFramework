@@ -1,6 +1,6 @@
 # Windows Service Framework
 
-A project for easily setting up robust Windows Services projects.
+A project for easily setting up robust Windows Services projects. demo
 
 **Platforms** - .NET Framework 4.6.1 and higher.
 
